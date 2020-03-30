@@ -16,7 +16,7 @@ public class DHTData {
 
     private double humidity;
 
-    private double   degreeCelsius;
+    private double degreeCelsius;
 
     public DHTData() {}
 
