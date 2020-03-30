@@ -16,3 +16,12 @@ spring:
       schema: measurements
 server:
   port: 8080
+de:
+  heinze:
+    kafka:
+      connectionURL: thisIsAConnectionURL
+      broker-address: brokerAddress1
+      number-of-brokers: 5
+      consumer:
+        consumer-string: SpecialConsumerString
+

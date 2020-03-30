@@ -9,20 +9,18 @@ import javax.persistence.Id;
 @Entity
 public class DHTData {
 
-    @Id
-    private long id;
+  @Id private long id;
 
-    private String timestamp;
+  private String timestamp;
 
-    private double humidity;
+  private double humidity;
+  private double degreeCelsius;
 
-    private double   degreeCelsius;
+  public DHTData() {}
 
-    public DHTData() {}
-
-    public DHTData(String timestamp, double humidity, double degree) {
-        this.degreeCelsius = degree;
-        this.humidity = humidity;
-        this.timestamp = timestamp;
-    }
+  public DHTData(String timestamp, double humidity, double degree) {
+    this.degreeCelsius = degree;
+    this.humidity = humidity;
+    this.timestamp = timestamp;
+  }
 }
