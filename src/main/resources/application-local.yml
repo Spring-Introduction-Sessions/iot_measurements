@@ -3,7 +3,7 @@ spring:
   jpa:
     generate-ddl: true
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   datasource:
     url: jdbc:postgresql://localhost:30000/postgres
@@ -11,7 +11,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     password: test123
     username: postgres
-    hikaki:
+    hikari:
       maximum-pool-size: 20
       schema: measurements
 server:
@@ -24,4 +24,5 @@ de:
       number-of-brokers: 5
       consumer:
         consumer-string: SpecialConsumerString
-
+logging:
+  config: classpath:logback-local.xml
